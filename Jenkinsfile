@@ -51,7 +51,7 @@ pipeline {
               deleteDir()
 	      unstash 'code'
               sh 'echo "HELLO"'
-	      sh '"signing apk"'
+	      sh 'echo "signing apk"'
             }
           }
         )
