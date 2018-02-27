@@ -64,7 +64,7 @@ pipeline {
           'Testing':{
             node('master') {
               deleteDir()
-	      build 'integration_testing'
+	      //build 'integration_testing'
               sh 'echo "testting"'
             }
           }
