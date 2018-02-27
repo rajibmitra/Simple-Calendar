@@ -34,12 +34,12 @@ pipeline {
 		     deleteDir()
 	     	     unstash 'code'
               	     sh 'echo "building app"'
-		     archiveArtifacts 'target/*.war'
+		    // archiveArtifacts 'target/*.war'
 		    // stash name:'war_file', includes: '*.war'
 		}
 		
             }
-          }
+          
         )
       }
     }
